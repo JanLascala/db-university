@@ -35,27 +35,27 @@ digital_art: NOT NULL
 
 ## literature_teachers
 id: (BIGINT)- auto-increment  NOT NULL
-fullname: NOT NULL
-telephone: NOT NULL
-address: NOT NULL
-email: NOT NULL
-Specialization: NOT NULL
+fullname: varchar(30)NOT NULL
+telephone: smallinit NOT NULL
+address:  varchar(50)NOT NULL
+email: varchar(30) NOT NULL
+Specialization: varchar(50) NOT NULL
 
 ## biology_teachers
-id: (BIGINT)- auto-increment  NOT NULL
-fullname: NOT NULL
-telephone: NOT NULL
-address: NOT NULL
-email: NOT NULL
-Specialization: NOT NULL
+iid: (BIGINT)- auto-increment  NOT NULL
+fullname: varchar(30)NOT NULL
+telephone: smallinit NOT NULL
+address:  varchar(50)NOT NULL
+email: varchar(30) NOT NULL
+Specialization: varchar(50) NOT NULL
 
 ## art_teachers
 id: (BIGINT)- auto-increment  NOT NULL
-fullname: NOT NULL
-telephone: NOT NULL
-address: NOT NULL
-email: NOT NULL
-Specialization: NOT NULL
+fullname: varchar(30)NOT NULL
+telephone: smallinit NOT NULL
+address:  varchar(50)NOT NULL
+email: varchar(30) NOT NULL
+Specialization: varchar(50) NOT NULL
 
 ## exam_appeals
 id: (BIGINT)- auto-increment  NOT NULL
@@ -66,11 +66,11 @@ course:
 
 ## students
 id: (BIGINT)- auto-increment  NOT NULL
-fullname: NOT NULL
-telephone: NOT NULL
-address: NOT NULL
-email: NOT NULL
-department:NOT NULL
-course:NOT NULL
-vote. NOT NULL
+fullname: varchar(30) NOT NULL
+telephone: smallinit NOT NULL
+address:  varchar(50)NOT NULL
+email: varchar(30) NOT NULL
+department: varchar (20)NOT NULL
+course:varchar (20) NOT NULL
+vote:tinyinit NOT NULL
 
