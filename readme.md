@@ -23,7 +23,7 @@ asian_literature:
 human_biology:
 flora_biology:
 fauna_biology:
-cryptozoology:
+
 
 ## art_courses
 sketch_art:
