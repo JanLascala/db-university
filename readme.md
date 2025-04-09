@@ -9,50 +9,68 @@ per ogni appello d'Esame a cui lo Studente ha partecipato, è necessario memoriz
 
 ## table departments
 
-literature:
-biology:
-art:
+literature: NOT NULL
+biology:NOT NULL
+art:NOT NULL
 
 
 ### courses ###
 ##  table literature_courses
-european_literature:
-asian_literature:
+european_literature: NOT NULL
+asian_literature:NOT NULL
 
 ## biology_courses
-human_biology:
-flora_biology:
-fauna_biology:
+human_biology: NOT NULL
+flora_biology: NOT NULL
+fauna_biology:NOT NULL
 
 
 ## art_courses
-sketch_art:
-painting_art:
-sculpting_art:
-digital_art:
+sketch_art: NOT NULL
+painting_art: NOT NULL
+sculpting_art: NOT NULL
+digital_art: NOT NULL
 
 ### Teachers ###
 
 ## literature_teachers
 id: (BIGINT)- auto-increment  NOT NULL
-fullname:
-telephone:
-address:
-email:
-Specialization:
+fullname: NOT NULL
+telephone: NOT NULL
+address: NOT NULL
+email: NOT NULL
+Specialization: NOT NULL
 
 ## biology_teachers
 id: (BIGINT)- auto-increment  NOT NULL
-fullname:
-telephone:
-address:
-email:
-Specialization:
+fullname: NOT NULL
+telephone: NOT NULL
+address: NOT NULL
+email: NOT NULL
+Specialization: NOT NULL
 
 ## art_teachers
 id: (BIGINT)- auto-increment  NOT NULL
-fullname:
-telephone:
-address:
-email:
-Specialization:
+fullname: NOT NULL
+telephone: NOT NULL
+address: NOT NULL
+email: NOT NULL
+Specialization: NOT NULL
+
+## exam_appeals
+id: (BIGINT)- auto-increment  NOT NULL
+student_id:NOT NULL
+student_vote: NOT NULL
+teacher_id:NOT NULL
+course:
+
+## students
+id: (BIGINT)- auto-increment  NOT NULL
+fullname: NOT NULL
+telephone: NOT NULL
+address: NOT NULL
+email: NOT NULL
+department:NOT NULL
+course:NOT NULL
+vote. NOT NULL
+
