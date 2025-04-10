@@ -64,4 +64,48 @@ WHERE `period`= "I semestre" AND `year`= "1";
 " step 5"
 Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
 
+SELECT * 
+FROM `exams`
+WHERE `hour` > "14:00:00" AND `date` = "2020/06/20";
 
+3	53	16:35:33	SELECT * 
+ FROM `exams`
+ WHERE `hour` > "14:00:00" AND `date` = "2020/06/20"
+ LIMIT 0, 1000	21 row(s) returned	0.031 sec / 0.000 sec
+
+" step 6"
+Selezionare tutti i corsi di laurea magistrale (38)
+
+SELECT * 
+FROM `degrees`
+WHERE `level`= "magistrale";
+
+3	56	16:38:00	SELECT * 
+ FROM `degrees`
+ WHERE `level`= "magistrale"
+ LIMIT 0, 1000	38 row(s) returned	0.000 sec / 0.000 sec
+
+ 
+ 
+"step 7"
+Da quanti dipartimenti è composta l'università? (12)
+
+SELECT * 
+FROM `departments`
+
+3	57	16:39:18	SELECT * 
+ FROM `departments`
+ LIMIT 0, 1000	12 row(s) returned	0.016 sec / 0.000 sec
+
+"step 8"
+
+Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+SELECT * 
+FROM `teachers`
+WHERE `phone` IS NULL;
+
+3	62	16:43:05	SELECT * 
+ FROM `teachers`
+ WHERE `phone` IS NULL
+ LIMIT 0, 1000	50 row(s) returned	0.000 sec / 0.000 sec
