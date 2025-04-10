@@ -1,10 +1,10 @@
-"step 1"
+"step 0"
 
 USE `university_data`;
 
 -press lightning
 
-"step 2" 
+"step 1" 
 Selezionare tutti gli studenti nati nel 1990 (160)
 
 SELECT *  
@@ -21,7 +21,7 @@ result 160 rows
  WHERE YEAR(date_of_birth) = (1990)
  LIMIT 0, 1000	160 row(s) returned	0.000 sec / 0.000 sec
 
-"step 3" 
+"step 2" 
 Selezionare tutti i corsi che valgono più di 10 crediti (479)
 
 SELECT * 
@@ -34,7 +34,7 @@ result 479 rows
  WHERE `cfu` > '10'
  LIMIT 0, 1000	479 row(s) returned	0.000 sec / 0.000 sec
 
-"step 4" 
+"step 3" 
 
 Selezionare tutti gli studenti che hanno più di 30 anni
 
@@ -48,7 +48,7 @@ result 1000
  WHERE YEAR(date_of_birth) BETWEEN 1900 AND 1995
  LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
 
- "step 5"
+ "step 4"
 
  Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 
@@ -61,6 +61,7 @@ WHERE `period`= "I semestre" AND `year`= "1";
  WHERE `period`= "I semestre" AND `year`= "1"
  LIMIT 0, 1000	286 row(s) returned	0.000 sec / 0.000 sec
 
-" step 6"
+" step 5"
+Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
 
 
