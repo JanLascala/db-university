@@ -60,3 +60,11 @@ WHERE `departments`.`name` = 'Dipartimento di Matematica';
 
 --result= 54 
 
+// GROUP 
+
+// 1 Contare quanti iscritti ci sono stati ogni anno
+
+SELECT `enrolment_date`, COUNT(*) AS `student_count`
+FROM `students`
+GROUP BY `enrolment_date`;
+
