@@ -25,3 +25,12 @@ JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
 WHERE `course_teacher`.`teacher_id`= 44
 
 -- result = 11 rows
+
+//4 Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti
+
+SELECT * 
+FROM `students` 
+JOIN `degrees` ON `degrees`.`id`= `degree_id`
+JOIN `courses` ON `courses`.`degree_id` = `degrees`.`id`;
+
+--result= 1000 rows
