@@ -27,10 +27,15 @@ WHERE `course_teacher`.`teacher_id`= 44
 -- result = 11 rows
 
 //4 Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti
+e il relativo dipartimento, in ordine alfabetico per cognome e nome
 
-SELECT * 
+--SELECT * 
 FROM `students` 
 JOIN `degrees` ON `degrees`.`id`= `degree_id`
-JOIN `courses` ON `courses`.`degree_id` = `degrees`.`id`;
+JOIN `courses` ON `courses`.`degree_id` = `degrees`.`id`
+JOIN `departments` ON `departments`.`id`= `department_id`
+ORDER BY `students`.`name`, `students`.`surname` ASC;
 
 --result= 1000 rows
+
+//5 
