@@ -38,4 +38,14 @@ ORDER BY `students`.`name`, `students`.`surname` ASC;
 
 --result= 1000 rows
 
-//5 
+//5 Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+
+-- SELECT * 
+FROM `courses`
+JOIN `degrees` ON `degrees`.`id`= `degree_id`
+JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
+JOIN `teachers`ON `teachers`.`id`= `teacher_id`; 
+
+--result= 1000 rows
+
+//6 
