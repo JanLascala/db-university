@@ -64,7 +64,22 @@ WHERE `departments`.`name` = 'Dipartimento di Matematica';
 
 // 1 Contare quanti iscritti ci sono stati ogni anno
 
-SELECT `enrolment_date`, COUNT(*) AS `student_count`
+--SELECT `enrolment_date`, COUNT(*) AS `student_count`
 FROM `students`
 GROUP BY `enrolment_date`;
 
+// 2 Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+--SELECT `teachers`.`office_address`, COUNT(*)
+FROM `teachers`
+GROUP BY `office_address`;
+
+//3 Calcolare la media dei voti di ogni appello d'esame
+
+
+//4 Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+--SELECT `departments`.`name`, COUNT(`degrees`.`name`)
+FROM `degrees`
+JOIN `departments` ON `degrees`.`department_id`= `departments`.`id`
+GROUP BY `departments`.`name`;
